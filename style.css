@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    color: #1a202c;
+  }
+  
+  footer {
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1.5s forwards;
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Testimonial carousel */
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel > div {
+    flex: 0 0 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Navbar scroll effect */
+  nav.scrolled {
+    background-color: #1a202c;
+    transition: background-color 0.3s;
+  }
+  

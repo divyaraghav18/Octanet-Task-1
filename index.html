@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCrafters Hub - Learn, Share, Collaborate</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-poppins">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full flex justify-between items-center p-6 bg-white shadow-md z-50">
+    <div class="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition">
+      CodeCrafters Hub
+    </div>
+    <div class="space-x-4">
+      <a href="#features" class="hover:text-blue-500 transition duration-200">Features</a>
+      <a href="#testimonials" class="hover:text-blue-500 transition duration-200">Testimonials</a>
+      <a href="#contact" class="hover:text-blue-500 transition duration-200">Contact</a>
+    </div>
+    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded shadow-lg transition duration-300">Join Now</button>
+  </nav>
+
+  <!-- Hero Section with Background Video -->
+  <section class="relative bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-32 h-screen">
+    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover opacity-50 z-0">
+      <source src="images/code_background.mp4" type="video/mp4">
+    </video>
+    <div class="container mx-auto text-center relative z-10">
+      <h1 class="text-5xl font-bold mb-4 animate-fade-in">Welcome to CodeCrafters Hub</h1>
+      <p class="text-lg mb-6 animate-fade-in">A platform where developers come to learn, share, and grow.</p>
+      <button class="bg-white text-blue-500 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300">Start Learning</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10 animate-fade-up">Why Join CodeCrafters Hub?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="p-6 bg-white shadow-lg rounded-lg transform transition hover:scale-105">
+          <i class="fas fa-code text-blue-500 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Code & Collaborate</h3>
+          <p>Join coding challenges, hackathons, and collaborate with developers globally.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="p-6 bg-white shadow-lg rounded-lg transform transition hover:scale-105">
+          <i class="fas fa-graduation-cap text-blue-500 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Learn New Skills</h3>
+          <p>Access a vast library of tutorials and coding resources to enhance your development skills.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="p-6 bg-white shadow-lg rounded-lg transform transition hover:scale-105">
+          <i class="fas fa-network-wired text-blue-500 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Connect with Peers</h3>
+          <p>Engage in meaningful conversations, share knowledge, and build lasting connections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel Section -->
+  <section id="testimonials" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10 animate-fade-up">What Our Members Say</h2>
+      <div id="testimonial-slider" class="carousel overflow-hidden relative">
+        <!-- Testimonial 1 -->
+        <div class="p-6 bg-white shadow-lg rounded-lg">
+          <p class="mb-4">"CodeCrafters Hub has completely changed how I code and learn. The community is amazing!"</p>
+          <h3 class="font-semibold">- Alex Smith</h3>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="p-6 bg-white shadow-lg rounded-lg">
+          <p class="mb-4">"This platform is a treasure trove of resources. Highly recommended for all developers."</p>
+          <h3 class="font-semibold">- Emily Johnson</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+      <form class="max-w-md mx-auto" id="contact-form">
+        <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border border-gray-300 rounded">
+        <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border border-gray-300 rounded">
+        <textarea placeholder="Your Message" class="w-full p-3 mb-4 border border-gray-300 rounded h-32"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-900 text-white">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 CodeCrafters Hub. All Rights Reserved.</p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="hover:text-blue-500 transition duration-300"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-blue-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-500 transition duration-300"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
